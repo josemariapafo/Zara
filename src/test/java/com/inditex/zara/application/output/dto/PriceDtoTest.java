@@ -93,7 +93,6 @@ class PriceDtoTest {
         actualPriceDto.setPvp(10.0f);
         Date startDate = Date.from(LocalDate.of(1970, 1, 1).atStartOfDay().atZone(ZoneOffset.UTC).toInstant());
         actualPriceDto.setStartDate(startDate);
-        actualPriceDto.toString();
         Long actualBrandId = actualPriceDto.getBrandId();
         String actualCurr = actualPriceDto.getCurr();
         Date actualEndDate = actualPriceDto.getEndDate();
@@ -146,7 +145,6 @@ class PriceDtoTest {
         actualPriceDto.setPvp(10.0f);
         Date startDate2 = Date.from(LocalDate.of(1970, 1, 1).atStartOfDay().atZone(ZoneOffset.UTC).toInstant());
         actualPriceDto.setStartDate(startDate2);
-        actualPriceDto.toString();
         Long actualBrandId = actualPriceDto.getBrandId();
         String actualCurr = actualPriceDto.getCurr();
         Date actualEndDate = actualPriceDto.getEndDate();
@@ -194,7 +192,7 @@ class PriceDtoTest {
         PriceDto buildResult = pvpResult
                 .startDate(Date.from(LocalDate.of(1970, 1, 1).atStartOfDay().atZone(ZoneOffset.UTC).toInstant()))
                 .build();
-        assertNotEquals("Different type to PriceDto", buildResult);
+        assertNotEquals("Different type to PriceDto", buildResult.getCurr());
     }
 
     /**
@@ -216,7 +214,6 @@ class PriceDtoTest {
         PriceDto buildResult = pvpResult
                 .startDate(Date.from(LocalDate.of(1970, 1, 1).atStartOfDay().atZone(ZoneOffset.UTC).toInstant()))
                 .build();
-        assertEquals(buildResult, buildResult);
         int expectedHashCodeResult = buildResult.hashCode();
         assertEquals(expectedHashCodeResult, buildResult.hashCode());
     }

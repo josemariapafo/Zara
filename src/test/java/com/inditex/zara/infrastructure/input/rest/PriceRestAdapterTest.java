@@ -32,7 +32,7 @@ class PriceRestAdapterTest {
     private MockMvc mockMvc;
 
     /**
-     * Test 1.
+     * Test 1 for date 2020-06-14-10.00.00.
      *
      * @throws Exception the exception
      */
@@ -57,7 +57,7 @@ class PriceRestAdapterTest {
     }
 
     /**
-     * Test 2.
+     * Test 2 for date 2020-06-14-16.00.00.
      *
      * @throws Exception the exception
      */
@@ -82,7 +82,7 @@ class PriceRestAdapterTest {
     }
 
     /**
-     * Test 3.
+     * Test 3 for date 2020-06-14-21.00.00.
      *
      * @throws Exception the exception
      */
@@ -107,7 +107,7 @@ class PriceRestAdapterTest {
     }
 
     /**
-     * Test 4.
+     * Test 4 for date 2020-06-15-10.00.00.
      *
      * @throws Exception the exception
      */
@@ -132,7 +132,7 @@ class PriceRestAdapterTest {
     }
 
     /**
-     * Test 5.
+     * Test 5 for date 2020-06-16-21.00.00.
      *
      * @throws Exception the exception
      */
@@ -157,7 +157,7 @@ class PriceRestAdapterTest {
     }
 
     /**
-     * Test no param.
+     * Test with no params.
      *
      * @throws Exception the exception
      */

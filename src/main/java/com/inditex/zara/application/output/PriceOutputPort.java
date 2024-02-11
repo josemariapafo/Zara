@@ -11,7 +11,7 @@ import java.util.Optional;
 public interface PriceOutputPort {
 
     /**
-     * get price by applyDate, productId and brandId.
+     * Get price by applyDate, productId and brandId.
      *
      * @param requestedDate the requested date
      * @param productId     the product id
